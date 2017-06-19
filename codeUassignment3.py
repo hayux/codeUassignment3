@@ -147,11 +147,11 @@ def formString(charArray, searchMap, neighbourList):
     prefix = ''
     
     for location in searchMap:
-        prefix = prefix + charArray[location[0]][locaation[1]]
+        prefix = prefix + charArray[location[0]][location[1]]
     
     # adding neighbouring chars into prefix to form candidates
     for neighbour in neighbourList:
-        tempWord = prefix + charArray[neighbour[0]][neghbour[1]]
+        tempWord = prefix + charArray[neighbour[0]][neighbour[1]]
         candidate.append(tempWord)
         
     return candidate
